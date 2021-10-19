@@ -1,6 +1,6 @@
-import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
-import { Layout, Typography, Space } from 'antd';
+import React from "react";
+import { Switch, Route, Link } from "react-router-dom";
+import { Layout, Typography, Space } from "antd";
 
 import {
   Exchanges,
@@ -9,8 +9,8 @@ import {
   Cryptocurrencies,
   CryptoDetails,
   Navbar,
-} from './components';
-import './App.css';
+} from "./components";
+import "./App.css";
 
 const App = () => (
   <div className="app">
@@ -42,10 +42,10 @@ const App = () => (
       <div className="footer">
         <Typography.Title
           level={5}
-          style={{ color: 'white', textAlign: 'center' }}
+          style={{ color: "white", textAlign: "center" }}
         >
           Copyright © 2021
-          <Link to="/">Crypto-Roc8</Link> <br />
+          <Link to="/">Roc8-coins Inc.</Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>

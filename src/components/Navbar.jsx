@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Button, Menu, Typography, Avatar } from 'antd';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Button, Menu, Typography, Avatar } from "antd";
+import { Link } from "react-router-dom";
 import {
   HomeOutlined,
   MoneyCollectOutlined,
   BulbOutlined,
   FundOutlined,
   MenuOutlined,
-} from '@ant-design/icons';
+} from "@ant-design/icons";
 
-import icon from '../images/cryptocurrency.png';
+import icon from "../images/cryptocurrency.png";
 
 const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);
@@ -18,11 +18,11 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">Crypto-Roc8</Link>
+          <Link to="/">Roc8-coins</Link>
         </Typography.Title>
         <Button
           className="menu-control-container"
